@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Profile.module.css"; //импорт стилей для компонента
-import PropTypes from "prop-types";  //импорт библиотеки для валидации пропсов
+import PropTypes from "prop-types"; //импорт библиотеки для валидации пропсов
 import defaultImageAvatar from "./default-avatar.png"; //импорт дефолтной картинки для автвра
-
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
@@ -10,7 +9,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
       <div className={styles.description}>
         <img src={avatar} alt={name} className={styles.avatar} />
         <p className={styles.name}>{name}</p>
-        <p className={styles.tag}>{tag}</p>
+        <p className={styles.tag}>@{tag}</p>
         <p className={styles.location}>{location}</p>
       </div>
 
@@ -34,19 +33,20 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
 
 export default Profile;
 
+//Дефолтная картинка для аватарки
 Profile.defaultProps = {
   avatar: defaultImageAvatar,
 };
 
 //Проверка типов получаемых пропсов
 Profile.propTypes = {
+  avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
