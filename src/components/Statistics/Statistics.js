@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Statistics.module.css";
 import PropTypes from "prop-types";
 
+//функция рандомного цвета для фона лишки
 const getRandomColor = () => {
   let color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
   while (color.length < 6) {
