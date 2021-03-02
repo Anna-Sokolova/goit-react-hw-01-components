@@ -1,9 +1,13 @@
-import './App.css';
+//Компоненты
 import Profile from './components/Profile/Profile'; //импорт компонента профиля соц сети
 import Statistics from './components/Statistics/Statistics'; // импорт компонента статистики
 import FriendList from './components/FriendList/FriendList'; //// импорт компонента списка друзей
 import TransactionHistory from './components/TransactionHistory/TransactionHistory'; //импорт компонента транзакций
 
+//Стили
+import './App.css';
+
+//Данные для пропсов
 import userProfile from './db/user.json'; // импорт данных о пользователе компонента Profile
 import statisticData from './db/statistical-data.json'; // импорт данных ститистики
 import friendsData from './db/friends.json'; // импорт данных друзей

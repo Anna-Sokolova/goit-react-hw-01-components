@@ -1,7 +1,7 @@
-import React from "react";
-import OneTransaction from "./OneTransaction";
-import styles from "./TransactionHistory.module.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import OneTransaction from './OneTransaction';
+import styles from './TransactionHistory.module.css';
+import PropTypes from 'prop-types';
 
 const TransactionHistory = ({ items }) => {
   return (
@@ -31,6 +31,6 @@ TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };

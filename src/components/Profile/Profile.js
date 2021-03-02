@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Profile.module.css"; //импорт стилей для компонента
-import PropTypes from "prop-types"; //импорт библиотеки для валидации пропсов
-import defaultImageAvatar from "./default-avatar.png"; //импорт дефолтной картинки для автвра
+import React from 'react';
+import styles from './Profile.module.css'; //импорт стилей для компонента
+import PropTypes from 'prop-types'; //импорт библиотеки для валидации пропсов
+import defaultImageAvatar from './default-avatar.png'; //импорт дефолтной картинки для автвра
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
   return (

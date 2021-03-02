@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./FriendList.module.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import styles from './FriendList.module.css';
+import PropTypes from 'prop-types';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   const status = isOnline ? styles.isOnline : styles.isOfline;

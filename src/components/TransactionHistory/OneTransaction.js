@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 // import styles from "./TransactionHistory.module.css";
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const OneTransaction = ({ type, amount, currency }) => {
   return (
@@ -18,4 +18,4 @@ OneTransaction.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
-}
+};
